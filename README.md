@@ -36,17 +36,12 @@ School of Mathematics and Statistics, Shaanxi Normal University, Xi’an, 710119
 Email: xiaolongwang@snnu.edu.cn
 
 # citation: 
-
+```bibtex
 @article{wang2025pseudo,
-
       title={The pseudo-analytical density solution to parameterized {F}okker-{P}lanck equations via deep learning},
-      
       author={Xiaolong Wang and Jing Feng and Gege Wang and Tong Li and Yong Xu},
-      
       year={2025},
-      
       volume={2503.09073},
-      
       journal={arXiv},
 }
 
