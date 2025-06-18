@@ -15,6 +15,8 @@ The implementation provides four numerical examples of the PAPS, corresponding t
 
 You may see figures like these.
 
+![Alt text](test_2d_van_der_pol.png)
+
 ## Train new models
 
 To train a new PAPS:
