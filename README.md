@@ -23,7 +23,7 @@ Uncomment and run the train_xx_system() function in the same file. Note that the
 
 While the four files share a common structure, each incorporates system-specific Fokker-Planck operators and parameter ranges. Key customization points are marked with the comment "please change here". Modify these sections to adapt the code for alternative systems or configurations.
 
-# Important Note
+## Important Note
 
 The PAPS is specifically designed for parameterized Fokker-Planck equations with unique stationary solutions. For systems exhibiting multiple coexisting stationary solutions, the PAPS may converge to an arbitrary combination of these solutions, which might not match the desired outcome.
 
