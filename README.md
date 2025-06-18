@@ -23,7 +23,9 @@ To train a new PAPS:
 
 Uncomment and run the train_xx_system() function in the same file. Note that the code has been implemented in Pytorch and tested on a GeForce RTX 4090 GPU with 24 GB memory. For GPUs with limited memory, less sample sizes should be selected to avoid memory overflow, e.g., decreasing N_system and N_point. Please see model.py file for more instruction.
 
-While the four files share a common structure, each incorporates system-specific Fokker-Planck operators and parameter ranges. Key customization points are marked with the comment "please change here". Modify these sections to adapt the code for alternative systems or configurations.
+## Apply the PAPS to new systems
+
+The four files are nearly identical in structure, differing only in their Fokker-Planck operators and parameter ranges. Key customization points are marked with the comment "please change here". Modify these sections to adapt the code for alternative systems or configurations.
 
 ## Important Note
 
