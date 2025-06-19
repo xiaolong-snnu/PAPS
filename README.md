@@ -1,6 +1,6 @@
 # PAPS: The pseudo-analytical probability solution
 
-This repository contains the implementation code for our paper titled 'The pseudo-analytical probability solution to parameterized Fokker-Planck equations via deep learning'. In this work, we propose the pseudo-analytical probability solution (PAPS) for solving Fokker-Planck equations with multiple variable system parameters. The paper has been accepted for publication in Engineering Applications of Artificial Intelligence. The preprint version is available here: https://arxiv.org/abs/2503.09073.
+This repository contains the implementation code for our paper titled 'The pseudo-analytical probability solution to parameterized Fokker-Planck equations via deep learning'. In this work, we propose the pseudo-analytical probability solution (PAPS) for solving Fokker-Planck equations (FPEs) with multiple variable system parameters. The paper has been accepted for publication in Engineering Applications of Artificial Intelligence. The preprint version is available here: https://arxiv.org/abs/2503.09073.
 
 # Usage
 
@@ -14,7 +14,13 @@ The implementation provides four numerical examples of the PAPS, corresponding t
 
 You may see figures like these.
 
+(1) Comparisons between analytical stationary solutions of FPEs and our PAPS solutions.
+
 ![Alt text](test_2d_van_der_pol.png)
+
+(2) The means and weights of our PAPS solutions, which use 50 adaptive Gaussian components to approximate the true solutions.
+
+![Alt text](VDP_show_weights.png)
 
 ## Train new models
 
