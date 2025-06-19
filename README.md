@@ -6,7 +6,7 @@ This repository contains the implementation code for our paper titled 'The pseud
 
 ## Quick test
 
-The implementation provides four numerical examples of the PAPS, corresponding to the 1D, 2D, 4D, and 6D systems in the paper. Each example is encapsulated in a separate Python file. To visualize results for any system:
+The implementation provides five numerical examples of the PAPS, corresponding to the 1D, 2D, 4D, and 6D systems in the paper. Each example is encapsulated in a separate Python file. To visualize results for any system:
 
 (1) Navigate to the main() function in the respective file.
 
@@ -18,7 +18,7 @@ You may see figures like these.
 
 ![Alt text](test_2d_van_der_pol.png)
 
-(2) The means and weights of our PAPS solutions, which use 50 adaptive Gaussian components to approximate the true solutions.
+(2) The means and weights of our PAPS solutions, which use 50 adaptive Gaussian components to approximate the stationary solutions of parameterized FPEs.
 
 ![Alt text](VDP_show_weights.png)
 
@@ -30,11 +30,13 @@ Uncomment and run the train_xx_system() function in the same file. Note that the
 
 ## Apply the PAPS to new systems
 
-The four files are nearly identical in structure, differing only in their Fokker-Planck operators and parameter ranges. Key customization points are marked with the comment "please change here". Modify these sections to adapt the code for alternative systems or configurations.
+The files of the five examples are nearly identical in structure, differing only in their Fokker-Planck operators and parameter ranges. Key customization points are marked with the comment "please change here". Modify these sections to adapt the code for alternative systems or configurations.
 
 ## Important Note
 
 The PAPS is specifically designed for parameterized Fokker-Planck equations with unique stationary solutions. For systems exhibiting multiple coexisting stationary solutions, the PAPS may converge to an arbitrary combination of these solutions, which might not match the desired outcome.
+
+If you are interested in solving a system with a single parameter choice instead of a continuous parameter domain, you can go to the function Dataset_xx_system.gen_system_parameters and set constants instead of sampling random values in specific intervals.
 
 Should you encounter any issues, please do not hesitate to contact me for assistance: 
 
